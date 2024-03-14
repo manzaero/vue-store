@@ -1,9 +1,11 @@
 <script setup>
 import TheHeader from "@/components/TheHeader.vue";
 import TheCardLList from "@/components/TheCardLList.vue";
+import TheDrawer from "@/components/TheDrawer.vue";
 </script>
 
 <template>
+  <the-drawer/>
   <div class="bg-white w-4/5 m-auto bg-white rounded-xl shadow-xl mt-14">
 
     <the-header/>
