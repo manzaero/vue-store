@@ -1,8 +1,9 @@
 <template>
-    <div class="relative bg-white cursor-pointer p-8 border border-slate-400 rounded-3xl transition hover:-translate-y-2 hover:shadow-2xl">
+    <div class="relative bg-white cursor-pointer p-8 border border-slate-300 rounded-3xl transition hover:-translate-y-2 hover:shadow-2xl">
       <img
           class="absolute top-8 left-8"
-          :src="!isFavorite ? '/like-1.svg' : '/like-2.svg'" alt="Like 1"
+          :src="!isFavorite ? '/like-1.svg' : '/like-2.svg'"
+          alt="Like 1"
           @click="onCLickFavorite"/>
       <img :src="imageUrl" alt="Sneakers">
       <p class="mt-2">{{ title }}</p>
@@ -12,7 +13,10 @@
           <b> {{ price }} руб.</b>
         </div>
 
-        <img @click="onClickAdd" :src="!isAdded ? '/plus.svg' : '/checked.svg'" alt="Plus">
+        <img
+            @click="onClickAdd"
+            :src="!isAdded ? '/plus.svg' : '/checked.svg'"
+            alt="Plus">
       </div>
     </div>
 </template>
