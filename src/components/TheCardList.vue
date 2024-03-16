@@ -15,7 +15,7 @@ const onclickFavorite = () => {
 </script>
 
 <template>
-  <div class="grid grid-cols-4 gap-5">
+  <div class="grid grid-cols-4 gap-5 lg:grid-cols-3 lg:gap-4 md:grid-cols-2 md:gap-3 sm:grid-cols-1 sm:gap-2">
     <the-card
         :items="items"
         v-for="item in items"
